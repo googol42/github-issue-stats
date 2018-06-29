@@ -3,7 +3,7 @@ set timefmt "%Y-%m-%dT%H:%M:%SZ"
 set datafile separator "\t"
 set terminal png size 768,768 enhanced truecolor font 'Roboto,9'
 set ylabel "Issues"
-set xlabel "Date"
+set xlabel "Datum"
 
 set pointsize 0.8
 set format x "%Y"
@@ -13,5 +13,5 @@ set tics front
 set key below
 
 plot \
-  tsv using 1:($2+$3) title 'Open' with filledcurves x1 lc rgb "#337dff", \
-  tsv using 1:2 title 'Closed' with filledcurves x1 lc rgb "#cef257" \
+  tsv using 1:($2+$3) title 'Offen' with filledcurves x1 lc rgb "#337dff", \
+  tsv using 1:2 title 'Geschlossen' with filledcurves x1 lc rgb "#cef257" \

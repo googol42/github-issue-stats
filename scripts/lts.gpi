@@ -2,8 +2,8 @@ set xdata time
 set timefmt "%Y-%m-%dT%H:%M:%SZ"
 set datafile separator "\t"
 set terminal png size 768,768 enhanced truecolor font 'Roboto,9'
-set ylabel "Days"
-set xlabel "Date"
+set ylabel "Tage"
+set xlabel "Datum"
 
 set datafile missing "?"
 set pointsize 0.8
@@ -12,5 +12,5 @@ set xtics out
 set tics front
 set key below
 
-plot tsv using 1:5 title 'Lead time' \
+plot tsv using 1:5 title 'Lebensdauer' \
   pointtype 7 pointsize 1
