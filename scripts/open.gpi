@@ -12,11 +12,6 @@ set xtics out
 set tics front
 set key below
 
-f(x) = m*x + b
-fit f(x) tsv using 1:3 via m,b
-
-#plot tsv using 1:3 title 'Offen' with points pointtype 7 pointsize 1, f(x) title "sdf"
-
 plot tsv using 1:3 title 'Offen' with \
   linespoints linecolor rgb "#337dff" linewidth 2 \
-  pointtype 7 pointsize 1, f(x) title "Lineare Regression"
+  pointtype 7 pointsize 1
