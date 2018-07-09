@@ -9,6 +9,7 @@ set xlabel "Datum"
 set pointsize 0.8
 set border 11
 set xtics out
+set ytics 1
 set tics front
 set key below
 
